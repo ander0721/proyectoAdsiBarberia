@@ -18,6 +18,11 @@ class Barberia extends Model
         'direccion',
         'propietario',
         'telefono',
-        'horario',
+        'horario'
     ];
+
+    public function servicio(){
+        //relacion 1 a muchos con los
+        return $this->hasMany("App\Servicio", 'idS');
+    }
 }

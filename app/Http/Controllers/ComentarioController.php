@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Comentario;
+use App\Usuario;
+
 use Illuminate\Http\Request;
 
 
@@ -14,8 +16,10 @@ class ComentarioController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {       
-        $comentarios = Comentario::paginate(5);
+    {   
+       // $usuario = App\Usuario::find(1);
+       //$usuario = Usuario::find()->with('name')->get(); 
+        $comentarios = Comentario::all();
         return view ('comentario.index')
         ->with("comentarios" ,$comentarios);
     }
@@ -38,10 +42,14 @@ class ComentarioController extends Controller
      */
     public function store(Request $request)
     {
+        $user= auth()->user()->id;
         $comentario = new Comentario();
-        $comentario->comentario = $request->input("nombreB");
+        $comentario->comentario = $request->input("comentario");
+        $comentario->user_id = $user;
 
         $comentario->save();
+
+        
 
         return redirect()->route('comentarios.index')
         ->with("exito" , "el comentario fue registrado correctamente");

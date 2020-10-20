@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="{{ asset('pagAdmin/css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('pagAdmin/css/cryptocoins.css') }}">
     <link rel="stylesheet" href="{{ asset('pagAdmin/css/cryptocoins-colors.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('pagAdmin/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- jQuery UI -->

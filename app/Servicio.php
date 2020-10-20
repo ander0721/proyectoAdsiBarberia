@@ -11,5 +11,10 @@ class Servicio extends Model
     public $timestamps = false;
 
     protected $fillable = ['nombreS','precio'];
+
+    public function barberia(){
+        return $this->belongsTo('App\Barberia' , 'idB');
+    }
+
 }
 

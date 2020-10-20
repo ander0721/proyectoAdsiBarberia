@@ -371,8 +371,8 @@ Version: 1.0.0
   background-image: linear-gradient(to right, #926afe, #bd9aff);
 }
 .bg-gradient-success{
-  background-color: #12b252;
-  background-image: linear-gradient(to right, #12b252, #31e97a);
+  background-color: #dc3545;
+  background-image: linear-gradient(to right, #dc3545, #31e97a);
 }
 .bg-gradient-warning{
   background-color: #fea837;
@@ -2219,8 +2219,8 @@ input:checked + .ms-switch-slider.ms-switch-secondary{
 .ms-checkbox-wrap.ms-checkbox-success input[type="checkbox"]:checked + i.ms-checkbox-check::before,
 .ms-checkbox-wrap.ms-checkbox-success input[type="radio"]:checked + i.ms-checkbox-check::before,
 input:checked + .ms-switch-slider.ms-switch-success{
-  background: #07be6e;
-  border-color: #07be6e;
+  background: #dc3545;;
+  border-color: #dc3545;;
 }
 .ms-checkbox-wrap.ms-checkbox-warning input[type="checkbox"]:checked + i.ms-checkbox-check::before,
 .ms-checkbox-wrap.ms-checkbox-warning input[type="radio"]:checked + i.ms-checkbox-check::before,
@@ -2713,8 +2713,8 @@ input:checked + .ms-switch-slider.ms-switch-dark{
 /* Alerts */
 .alert.alert-success{
   background-color: #e0ffef;
-  color: #07be6e;
-  border-color: #07be6e;
+  color: #dc3545;;
+  border-color: #dc3545;;
 }
 .alert.alert-info{
   background-color: #e0f2ff;
@@ -2749,7 +2749,7 @@ input:checked + .ms-switch-slider.ms-switch-dark{
   color: #fff;
 }
 .alert.alert-solid.alert-success{
-  background-color: #07be6e;
+  background-color: #dc3545;;
 }
 .alert.alert-solid.alert-info{
   background-color: #4f8dca;
@@ -2883,7 +2883,7 @@ input:checked + .ms-switch-slider.ms-switch-dark{
 }
 .ms-card.card-success,
 .ms-dark-theme .ms-card.card-success{
-  background-color: #07be6e;
+  background-color: #dc3545;;
 }
 .ms-card.card-warning,
 .ms-dark-theme .ms-card.card-warning{
@@ -3236,8 +3236,8 @@ background-color: #d9534f;
 }
 .btn-success{
   color: #fff;
-  background-color: #07be6e;
-  border-color: #07be6e;
+  background-color: #dc3545;;
+  border-color: #dc3545;;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -3245,8 +3245,8 @@ background-color: #d9534f;
 .btn-success:not(:disabled):not(.disabled):active,
 .btn-outline-success:hover{
   color: #fff;
-  background-color: #09a561;
-  border-color: #09a561;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 .btn-info{
   color: #fff;
@@ -3373,8 +3373,8 @@ background-color: #d9534f;
 }
 .ms-btn-icon-outline.btn-success,
 .btn-outline-success{
-  color: #07be6e;
-  border-color: #07be6e;
+  color: #dc3545;;
+  border-color: #dc3545;;
 }
 .ms-btn-icon-outline.btn-info,
 .btn-outline-info{
@@ -3414,8 +3414,8 @@ background-color: #d9534f;
   background-image: linear-gradient(to right, #926afe, #bd9aff);
 }
 .btn-gradient-success{
-  background-color: #12b252;
-  background-image: linear-gradient(to right, #12b252, #31e97a);
+  background-color: #dc3545;
+  background-image: linear-gradient(to right, #dc3545, #dc3545);
 }
 .btn-gradient-info{
   background-color: #3e60ff;
@@ -3471,7 +3471,7 @@ a.badge[class*='badge-']:hover{
   background-color: #445cc8;
 }
 .badge.badge-success{
-  background-color:  #28a745;
+  background-color:  #f9423c;
 }
 .badge.badge-warning{
   background-color: #fda600;
@@ -3495,7 +3495,7 @@ a.badge.badge-secondary:hover{
   background-color: #374eae;
 }
 a.badge.badge-success:hover{
-  background-color: #09a561;
+  background-color: #dc3545;
 }
 a.badge.badge-warning:hover{
   background-color: #e89800;
@@ -3529,8 +3529,8 @@ a .badge[class*='badge-outline-']{
   color: #374eae;
 }
 .badge.badge-outline-success{
-  border-color: #07be6e;
-  color: #07be6e;
+  border-color: #dc3545;;
+  color: #dc3545;;
 }
 .badge.badge-outline-warning{
   border-color: #fda600;
@@ -3561,8 +3561,8 @@ a .badge[class*='badge-outline-']{
   background-image: linear-gradient(to right, #926afe, #bd9aff);
 }
 .badge-gradient-success{
-  background-color: #12b252;
-  background-image: linear-gradient(to right, #12b252, #31e97a);
+  background-color: #dc3545;
+  background-image: linear-gradient(to right, #dc3545, #31e97a);
 }
 .badge-gradient-info{
   background-color: #3e60ff;
@@ -7453,5 +7453,12 @@ body:not(.ms-settings-open) .ms-settings-toggle:hover{
 
   .ms-switch .ms-status-switch{
     left: 75%;
+  }
+
+  .btn-nuevo {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    position: left;
   }
 }

@@ -17,9 +17,11 @@ Route::get('/', function () {
     return view('index');
 });
 
+
+
 Route::get('administracion', function () {
     return view('administrador.masterpage');
-});
+})->name('Pagadmin');
 
 Route::get('catalogo', function () {
     return view('administrador.catalogos');
@@ -45,5 +47,14 @@ Route::resource('usuario', 'UsuarioController');
 //BARBERIA
 Route::resource('barberias', 'BarberiaController');
 
+Route::resource('barberia', 'BarberiaController');
 
 Route::resource('comentarios', 'ComentarioController');
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+

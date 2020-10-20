@@ -70,7 +70,7 @@ class TipoController extends Controller
    
     public function edit($id)
     {
-        $tipo = Tipo::find($id);
+        $tipo = Servicio::find($id);
         return response()->json($tipo);
     }
 

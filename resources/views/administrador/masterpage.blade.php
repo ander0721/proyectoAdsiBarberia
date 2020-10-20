@@ -64,7 +64,7 @@
          <a href="#" class="has-chevron" data-toggle="collapse" data-target="#product" aria-expanded="false" aria-controls="product"> <span><img src="https://img.icons8.com/ios/16/000000/barbershop.png"/></i>  Barberías</span>
         </a>
         <ul id="product" class="collapse" aria-labelledby="product" data-parent="#side-nav-accordion">
-        <li class="{{request()->routeIs('barberias') ? 'active' : ''}}"><a href="/barberias">Administrar Barberías</a>
+        <li class="{{request()->routeIs('barberias') ? 'active' : ''}}"><a href="/barberias">Administrar</a>
           </li>
           </ul>
            </li>
@@ -74,7 +74,7 @@
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#servir" aria-expanded="false" aria-controls="servir"> <span><img src="https://img.icons8.com/ios/16/000000/barbershop.png"/></i>  Servicios</span>
         </a>
         <ul id="servir" class="collapse" aria-labelledby="servir" data-parent="#side-nav-accordion">
-          <li class="{{request()->routeIs('servicio') ? 'active' : ''}}"><a href="/servicio">Administrar Servicios</a>
+          <li class="{{request()->routeIs('servicio') ? 'active' : ''}}"><a href="/servicio">Administrar</a>
           </li>
 
           <li class="{{request()->routeIs('catalogo') ? 'active' : ''}}"><a href="/catalogo">Catalogo de Servicios</a>
@@ -90,7 +90,7 @@
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#marcas" aria-expanded="false" aria-controls="marcas"> <span><img src="https://img.icons8.com/ios/18/000000/product.png"/></i>Marcas</span>
         </a>
         <ul id="marcas" class="collapse" aria-labelledby="marcas" data-parent="#side-nav-accordion">
-          <li class="{{request()->routeIs('marca') ? 'active' : ''}}"><a href="/marca">Administrar Marcas</a>
+          <li class="{{request()->routeIs('marca') ? 'active' : ''}}"><a href="/marca">Administrar </a>
           </li>
         </ul>
          </li>
@@ -100,7 +100,7 @@
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#productos" aria-expanded="false" aria-controls="productos"> <span><img src="https://img.icons8.com/ios/18/000000/product.png"/></i>Productos</span>
         </a>
         <ul id="productos" class="collapse" aria-labelledby="productos" data-parent="#side-nav-accordion">
-          <li class="{{request()->routeIs('producto') ? 'active' : ''}}"><a href="/producto">Administrar Productos</a>
+          <li class="{{request()->routeIs('producto') ? 'active' : ''}}"><a href="/producto">Administrar</a>
           </li>
         </ul>
       </li>
@@ -111,7 +111,7 @@
         <ul id="tipopro" class="collapse" aria-labelledby="tipopro" data-parent="#side-nav-accordion">
 
 
-          <li class="{{request()->routeIs('tipo') ? 'active' : ''}}"><a href="/tipo">Administrar Tipos de Producto</a>
+          <li class="{{request()->routeIs('tipo') ? 'active' : ''}}"><a href="/tipo">Administrar</a>
           </li>
         </ul>
       </li>

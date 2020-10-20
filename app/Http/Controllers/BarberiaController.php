@@ -20,15 +20,14 @@ class BarberiaController extends Controller
                            $btn = '<a href="javascript:void(0)" data-toggle="tooltip" 
                                     data-id="'.$row->idB.'" data-original-title="Edit" class="edit btn btn-primary btn-sm editItem"><img src="https://img.icons8.com/ios/24/000000/edit.png"/></a>';
    
-                           $btn = $btn.' <a href="javascript:void(0)" data-toggle="tooltip"  data-id="'.$row->idB.'" data-original-title="Delete" class="btn btn-danger btn-sm deleteItem"><img src="https://img.icons8.com/ios/24/000000/trash.png"/></a><input type="hidden" class="form-control" id="editBtn"  value="'.$row->idM.'">';
-                       
+                           $btn = $btn.' <a href="javascript:void(0)" data-toggle="tooltip"  data-id="'.$row->idB.'" data-original-title="Delete" class="btn btn-danger btn-sm deleteItem"><img src="https://img.icons8.com/ios/24/000000/trash.png"/></a>';
                             return $btn;
                     })
                     ->rawColumns(['action'])
                     ->make(true);
         }
       
-        return view('barberias.index');
+        return view('barberia.index');
     }
 
    

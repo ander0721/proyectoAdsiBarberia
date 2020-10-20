@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Usuario;
-use Illuminate\Http\Request; 
+use App\usuario;
+use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
@@ -15,8 +14,7 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-      /*  $usuarios = \App\Usuario::paginate(5);
-        return view ('usuarios.index')->with("usuarios" , $usuarios);*/
+        //
     }
 
     /**
@@ -26,7 +24,7 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-        return view('usuarios.new'); 
+        //
     }
 
     /**
@@ -37,30 +35,16 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'email' => ['required', 'unique', 'max:10'],
-            'clave' => ['required'],
-        ]);
-
-        $usuario = new Usuario();
-        $usuario->email = $request->input("email");
-        $usuario->clave = $request->input("clave");
-        $usuario->save();
-
-        return redirect()->route('usuario.index')
-        ->with("exito" , "El usuario fue registrado correctamente")
-        ->with("Nombre usuario" , $usuario->nombreU)
-        ->with("email" , $usuario->email);
-
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\cr  $cr
+     * @param  \App\usuario  $usuario
      * @return \Illuminate\Http\Response
      */
-    public function show(cr $cr)
+    public function show(usuario $usuario)
     {
         //
     }
@@ -68,10 +52,10 @@ class UsuarioController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\cr  $cr
+     * @param  \App\usuario  $usuario
      * @return \Illuminate\Http\Response
      */
-    public function edit(cr $cr)
+    public function edit(usuario $usuario)
     {
         //
     }
@@ -80,10 +64,10 @@ class UsuarioController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\cr  $cr
+     * @param  \App\usuario  $usuario
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, cr $cr)
+    public function update(Request $request, usuario $usuario)
     {
         //
     }
@@ -91,10 +75,10 @@ class UsuarioController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\cr  $cr
+     * @param  \App\usuario  $usuario
      * @return \Illuminate\Http\Response
      */
-    public function destroy(cr $cr)
+    public function destroy(usuario $usuario)
     {
         //
     }

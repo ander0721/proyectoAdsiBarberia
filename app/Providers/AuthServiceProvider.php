@@ -24,7 +24,14 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+        Gate::before(function($user, $role){
+            return $user->tieneRole()->contains($role);
+        });
 
-        //
+        /*************** 
+        before se usa para definir una devolucion
+         de la llamada qque se ejecuta antes de todo
+          y contains si tiene un elemento dado
+        ****************/
     }
 }
